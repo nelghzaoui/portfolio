@@ -1,34 +1,29 @@
+/* COLORS */
+$primary: #f4623a !default;
+$secondary: #6c757d !default;
+
+$brown: #5c4d42 !default;
+$danger: #dc3545 !default;
+$light: #f8f9fa !default;
+$success: #28a745 !default;
+$warning: #ffc107 !default;
+$white: #fff !default;
+
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/mixins/_breakpoints";
 @import "node_modules/bootstrap/scss/variables";
 
-/* COLORS */
-$primary: #f4623a;
-$secondary: #6c757d;
-$success: #28a745;
-$warning: #ffc107;
-$danger: #dc3545;
+/* BREAKPOINT */
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
 
-$blue: #007bff;
-$brown: #5c4d42;
-$cyan: #17a2b8;
-$dark: #343a40;
-$indigo: #6610f2;
-$info: #17a2b8;
-$light: #f8f9fa;
-$pink: #e83e8c;
-$purple: #6f42c1;
-$teal: #20c997;
-$white: #fff;
+/* Custom variables */
+$navbar-height: 72px;
 
 /* FONTS */
-$font-family-monospace: SFMono-Regular,
-Menlo,
-Monaco,
-Consolas,
-"Liberation Mono",
-"Courier New",
-monospace;
 $font-family-sans-serif: "Merriweather Sans",
 -apple-system,
 BlinkMacSystemFont,
@@ -42,34 +37,7 @@ sans-serif,
 "Segoe UI Emoji",
 "Segoe UI Symbol",
 'Noto Color Emoji' !default;
-$font-family-serif: "Merriweather",
--apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
-"Helvetica Neue",
-Arial,
-"Noto Sans",
-sans-serif,
-"Apple Color Emoji",
-"Segoe UI Emoji",
-"Segoe UI Symbol",
-'Noto Color Emoji' !default;
-
-
-$font-family-base: $font-family-serif !default;
-$headings-font-family: $font-family-sans-serif !default;
 $font-weight-bold: 700 !important;
 
 /* SHADOW */
 $box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-
-/* BREAKPOINT */
-$breakpoint-xs: 0;
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
-
-/* Custom variables */
-$navbar-height: 72px;
