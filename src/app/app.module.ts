@@ -1,16 +1,22 @@
-import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from 'shared';
+import * as COMPONENTS from 'components';
 
 @NgModule({
-  declarations: [AppModule.COMPONENTS],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [AppComponent, AppModule.COMPONENTS],
+  imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  private static COMPONENTS = [AppComponent, NavbarComponent];
+  private static COMPONENTS = [
+    COMPONENTS.AboutComponent,
+    COMPONENTS.ContactComponent,
+    COMPONENTS.HomeComponent,
+    COMPONENTS.NavbarComponent,
+    COMPONENTS.ProjectComponent,
+    COMPONENTS.SkillComponent
+  ];
 }
