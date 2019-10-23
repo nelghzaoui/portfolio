@@ -13,12 +13,10 @@ $white: #fff !default;
 @import "node_modules/bootstrap/scss/mixins/_breakpoints";
 @import "node_modules/bootstrap/scss/variables";
 
-/* BREAKPOINT */
-$breakpoint-xs: 0;
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
+/* BREAKPOINT 
+* - XS = 0px / SM = 576px / MD = 768px
+* - LG = 992px / XL = 1200px
+*/
 
 /* Custom variables */
 $navbar-height: 72px;

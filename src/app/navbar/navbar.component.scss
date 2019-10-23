@@ -1,8 +1,8 @@
-@import "src/theme/variables.scss";
+@import "theme/variables.scss";
 
-#mainNav {
-    // box-shadow: $box-shadow;
-    // background-color: $white;
+nav {
+    box-shadow: $box-shadow;
+    background-color: $white;
     transition: background-color 0.2s ease;
 
     .navbar-brand {
@@ -29,61 +29,59 @@
         }
     }
 
-
-}
-
-@include media-breakpoint-up(lg) {
-    // Base styling for the navbar - screen sizes greater than the large breakpoint
-    // box-shadow: none;
-    // background-color: transparent;
-
-    .navbar-brand {
-        color: fade-out($white, .3);
-
-        &:hover {
-            color: $white;
-        }
-    }
-
-    .navbar-nav {
-        .nav-item {
-            .nav-link {
-                color: fade-out($white, .3);
-                padding: 0 1rem;
-
-                &:hover {
-                    color: $white;
-                }
-            }
-
-            &:last-child {
-                .nav-link {
-                    padding-right: 0;
-                }
-            }
-        }
-    }
-
-    // Navbar styling applied when the page is scrolled
-    .navbar-scrolled {
-        box-shadow: $box-shadow;
-        background-color: $white;
+    @include media-breakpoint-up(lg) {
+        // Base styling for the navbar - screen sizes greater than the large breakpoint
+        box-shadow: none;
+        background-color: transparent;
 
         .navbar-brand {
-            color: $secondary;
+            color: fade-out($white, .3);
 
             &:hover {
-                color: $primary;
+                color: $white;
             }
         }
 
         .navbar-nav {
             .nav-item {
                 .nav-link {
-                    color: $secondary;
+                    color: fade-out($white, .3);
+                    padding: 0 1rem;
 
                     &:hover {
-                        color: $primary;
+                        color: $white;
+                    }
+                }
+
+                &:last-child {
+                    .nav-link {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+
+        // Navbar styling applied when the page is scrolled
+        .navbar-scrolled {
+            box-shadow: $box-shadow;
+            background-color: $white;
+
+            .navbar-brand {
+                color: $secondary;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        color: $secondary;
+
+                        &:hover {
+                            color: $primary;
+                        }
                     }
                 }
             }
