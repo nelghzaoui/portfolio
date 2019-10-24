@@ -29,8 +29,8 @@ nav {
         }
     }
 
+    /* Base styling for the navbar - screen sizes greater than the large breakpoint - LG = 992px */
     @include media-breakpoint-up(lg) {
-        // Base styling for the navbar - screen sizes greater than the large breakpoint
         box-shadow: none;
         background-color: transparent;
 
@@ -61,7 +61,7 @@ nav {
             }
         }
 
-        // Navbar styling applied when the page is scrolled
+        /* Navbar styling applied when the page is scrolled */
         .navbar-scrolled {
             box-shadow: $box-shadow;
             background-color: $white;

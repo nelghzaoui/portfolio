@@ -15,7 +15,6 @@ export class AppModule {
     COMPONENTS.AboutComponent,
     COMPONENTS.ContactComponent,
     COMPONENTS.HomeComponent,
-    COMPONENTS.NavbarComponent,
     COMPONENTS.ProjectComponent,
     COMPONENTS.SkillComponent
   ];
