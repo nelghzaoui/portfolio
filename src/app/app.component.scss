@@ -1,9 +1,9 @@
 @import "theme/variables.scss";
 
 nav {
-    background-color: $white;
-    box-shadow: $box-shadow;
-    transition: background-color 0.2s ease;
+    // background: none;
+    // background-color: $dark;
+    // transition: background-color 0.0051s ease;
 
     .navbar-brand {
         font-family: $font-family-sans-serif;
@@ -62,7 +62,7 @@ nav {
         }
 
         /* Navbar styling applied when the page is scrolled */
-        .navbar-scrolled {
+        &.navbar-scrolled {
             box-shadow: $box-shadow;
             background-color: $white;
 

@@ -1,5 +1,5 @@
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="nav">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="navbar">
   <div class="container">
     <!-- TITLE -->
     <a class="navbar-brand js-scroll-trigger" href="#home">Lorem ipsum</a>
@@ -15,22 +15,25 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#about">About</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
 </nav>
+
 <!-- COMPONENTS -->
-<home id="home"></home>
-<!-- <about id="about"></about>
-<skill id="skills"></skill>
-<project id="projects"></project>
-<contact id="contact"></contact> -->
+<ng-container id="components">
+  <home id="home"></home>
+  <about id="about"></about>
+  <!-- <skill id="skills"></skill> -->
+  <project id="projects"></project>
+  <!-- <contact id="contact"></contact> -->
+</ng-container>
