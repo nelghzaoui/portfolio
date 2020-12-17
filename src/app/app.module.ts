@@ -16,6 +16,6 @@ export class AppModule {
     COMPONENTS.ContactComponent,
     COMPONENTS.HomeComponent,
     COMPONENTS.ProjectComponent,
-    COMPONENTS.SkillComponent
+    COMPONENTS.SkillsComponent
   ];
 }
