@@ -1,8 +1,8 @@
-(function($) {
+(function ($) {
   'use strict'; // Start of use strict
 
   /* Smooth scrolling using jQuery easing */
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
       location.hostname == this.hostname
@@ -12,7 +12,7 @@
       if (target.length) {
         $('html, body').animate(
           {
-            scrollTop: target.offset().top - 72
+            scrollTop: target.offset().top - 72,
           },
           1000,
           'easeInOutExpo'
@@ -23,14 +23,14 @@
   });
 
   /* Closes responsive menu when a scroll trigger link is clicked */
-  $('div.js-scroll-trigger').click(function() {
+  $('div.js-scroll-trigger').click(function () {
     $('.navbar-collapse').collapse('hide');
   });
 
   /* Activate scrollspy to add active class to navbar items on scroll */
   $('body').scrollspy({
     target: '#navbar',
-    offset: 75
+    offset: 75,
   });
 
   /* Collapse Navbar */

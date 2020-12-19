@@ -1,6 +1,6 @@
 /* Firstly set custom variables, it will override Bootstrap default variables */
 @import './variables.scss';
 /* Then import Bootstrap */
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import '~bootstrap/scss/bootstrap.scss';
 /* Finally import global scss of the application */
 @import './global.scss';

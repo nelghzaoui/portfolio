@@ -5,9 +5,9 @@ $danger: #dc3545 !default;
 $dark: #100c08 !default;
 $white: #fff !default;
 
-@import 'node_modules/bootstrap/scss/functions';
-@import 'node_modules/bootstrap/scss/mixins/_breakpoints';
-@import 'node_modules/bootstrap/scss/variables';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/mixins/_breakpoints';
+@import '~bootstrap/scss/variables';
 
 /* BREAKPOINT 
 * - XS = 0px / SM = 576px / MD = 768px
