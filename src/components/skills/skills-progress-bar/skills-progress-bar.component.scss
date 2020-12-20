@@ -1,0 +1,126 @@
+@import '../../../theme/variables.scss';
+
+div.container {
+    // margin: 0.5rem;
+
+    .card {
+        margin-top: 1rem;
+        position: relative;
+        width: 15rem;
+        background: linear-gradient(0deg, $secondary, $dark, $secondary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 18rem;
+        border-radius: 4px;
+        text-align: center;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    
+    .card:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50%;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, .03);
+        pointer-events: none;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0,0,0,.5);
+    }
+
+    .card:hover .percent {
+
+        .number h2 {
+            color: $white;
+            font-size: 50px;
+
+            span {
+                color: $white;
+            }
+        }
+
+        .text {
+            color: $white;
+        }
+    }
+
+    .card:nth-child(1) svg circle:nth-child(2) {
+        stroke-dashoffset: calc(450 - (450 * 80) / 100);
+        stroke: $primary;
+    }
+
+    .percent {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        box-shadow: inset 0 0 50px $dark;
+        background: $dark;
+        z-index: 1;
+
+        .number {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+
+            h2 {
+                color: $grey;
+                font-weight: 700;
+                font-size: 40px;
+                transition: 0.5s;
+
+                span {
+                    font-size: 24px;
+                    color: $grey;
+                    transition: 0.5s;
+                }
+            }
+        }
+
+        .text {
+            position: relative;
+            color: $grey;
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: 0.5s;
+        }
+    }
+
+    svg {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        z-index: 1000;
+
+        circle {
+            width: 100%;
+            height: 100%;
+            fill: none;
+            stroke: $secondary;
+            stroke-width: 10;
+            stroke-linecap: round;
+            transform: translate(5px, 5px);
+        }
+
+        circle:nth-child(2) {
+            stroke-dasharray: 450;
+            stroke-dashoffset: 450;
+        }
+    }
+}

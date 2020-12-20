@@ -19,5 +19,6 @@ export class AppModule {
     COMPONENTS.HomeComponent,
     COMPONENTS.ProjectComponent,
     COMPONENTS.SkillsComponent,
+    COMPONENTS.SkillsProgressBarComponent
   ];
 }
