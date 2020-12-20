@@ -19,8 +19,12 @@ $white: #fff !default;
 $navbar-height: 72px;
 
 /* FONTS */
-$font-family-sans-serif: 'Merriweather Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
-  Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
+@font-face {
+  font-family: 'Raleway';
+  src: url('../assets/fonts/Raleway.ttf');  
+}
+
+$font-family-sans-serif: 'Raleway', 'Open Sans', Roboto, Lato, Montserrat !default;
 $font-weight-bold: 700 !important;
 
 /* SHADOW */
